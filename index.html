@@ -3,45 +3,57 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-        <link rel="stylesheet" href="/styles/style.css">
+        <title>Encriptador Kensy Soriano</title>
+        <link rel="stylesheet" href="/styles/style2.css">
+        
         </head>
     <body>
-        <main class="principal">
+        <header>
+            <div class="header">
+                <img class="headerLogo" src="/img/Logo.png" alt="">
+            </div>
+        </header>
+
+        <main class="main">
+            
             <section class="encriptar">
                 <div>
-                    <textarea name="texto" id="texto" class="cajaTexto" aria-placeholder="Ingrese texto aquí"></textarea>
+                    <textarea name="texto" id="texto" class="cajaTexto" placeholder="Ingrese texto aquí"></textarea>
                 </div> 
 
                 <div class="terminos">
-                    <p>Solo letras minúsculas y sin acentos</p>
+                    <div class="exepciones">
+                        <img class="advertencia" src="/img/bi_exclamation-circle-fill.png" alt="">
+                        <span class="minusculas">Solo letras minúsculas y sin acentos</span>
+                    </div>
+                    <div class="botones">
+                        <input type="button" value="Encriptar"class="btnEncriptar" onclick="btnEncriptar()" >
+                        <input type="button" value="Desencriptar"class="btnDesencriptar" onclick="btnDesencriptar()" >
+                    </div>
+                
                 </div>
 
 
-                <div class="botones">
-                    <input type="button" value="Encriptar"class="btnEncriptar" onclick="encriptar()" >
-                    <input type="button" value="Desencriptar"class="btnEncriptar" onclick="desincriptar()" >
-                </div>
+                
             </section> 
 
             <section class="encriptado">
-                <img src="/img/Muñeco.png" alt="muñeco" class="muneco">
-                <div class="mensajeEncriptado" id="mensajeEncriptado">
-                    <h2 id="tituloMensaje">Ningún mensaje fue encontrado</h2>
-                    <p class="parrafo">Ingresa el texto que desees encriptar o desencriptar.</p>
-                    <textarea name="mensaje" id="mensaje" class="mensajeRespuesta"></textarea>
+            <textarea id="mensaje" class="mensaje ajuste" placeholder="Ningún mensaje fue encontrado" readonly></textarea>
+
+                <img src="/img/Muñeco.png" alt="" class="muneco" id="muneco" >
+                <div class="mensajeEncriptado" id="mensajeEncriptado">  
+                    <p id="parrafo" class="parrafo">Ingresa el texto que desees encriptar o desencriptar.</p>
+                    <input type="button" value="Copiar" class="btnCopiar oculto"  onclick="copiarTexto()">
                 </div>
             </section>
         </main>
 
 
-        <footer></footer>
-        
+        <footer class="footer">
+            <p>Dev: Kensy Soriano</p>  
+        </footer>
+    <script src="script.js"></script>   
     </body>
-
-    <Script src="index.js"></Script>
-
-
 
 
 </html>
