@@ -191,10 +191,6 @@ header{
 
 
 @media screen and (max-width: 500px) {
-    .headerLogo {
-        max-width: 100px; 
-    }
-
     .main {
         flex-direction: column;
         align-items: center;
@@ -209,20 +205,15 @@ header{
 
 
     .botones {
-        display: -webkit-flex;
         flex-direction: column;
-        width: 100%;
         gap: 8px;
-
-    } 
+    }
 
     .btnEncriptar, .btnDesencriptar {
-        flex: 1;
         width: 100%;
         max-width: none;
-        height: 67px;
+        height: 50px;
         font-size: 16px;
-        font-weight: 400;
     }
 
     .cajaTexto {
@@ -279,10 +270,6 @@ header{
 }
 
 @media (max-width: 800px) {
-    .headerLogo {
-        max-width: 150px; /* Reduces the logo size for smaller screens */
-    }
-    
     .main {
         grid-template-columns: 1fr;
         grid-template-rows: auto auto;
