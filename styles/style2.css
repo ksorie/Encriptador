@@ -99,13 +99,6 @@ header{
 
 }
 
-.btnDesencriptar:hover, .btnEncriptar:hover{
-    padding: 0;
-    width: 30%;
-    padding: 1.9%;
-
-}
-
 /* Sección desncriptar*/
 
 .encriptado{
